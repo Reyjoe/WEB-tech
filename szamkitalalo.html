@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Számkitaláló játék</title>
+</head>
+<body>
+
+<h1>Számkitaláló játék</h1>
+
+<script>
+let megoldas = Math.floor(Math.random() * 1000001);
+let maxProbalkozas = 20;
+let eltalalta = false;
+
+for (let i = 1; i <= maxProbalkozas; i++) {
+
+    let tipp = parseInt(prompt("Add meg a tipped (0 - 1000000):"));
+
+    if (isNaN(tipp)) {
+        alert("Nem számot adtál meg!");
+        i--;
+        continue;
+    }
+
+    if (tipp > megoldas) {
+        alert(i + ". tipp nem talált: A megoldás kisebb.");
+    } 
+    else if (tipp < megoldas) {
+        alert(i + ". tipp nem talált: A megoldás nagyobb.");
+    } 
+    else {
+        alert("Gratulálok, " + i + " lépésből eltaláltad! A tipped helyes.");
+        eltalalta = true;
+        break;
+    }
+}
+
+if (!eltalalta) {
+    alert("Sajnos ez most nem sikerült! A megoldás: " + megoldas);
+}
+</script>
+
+</body>
+</html>
