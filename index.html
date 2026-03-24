@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <title>Főoldal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Feladatlista</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="index.html">Főoldal</a>
-        <a href="user-search.html">Felhasználó keresés</a>
-    </nav>
+  <h2>Teendő lista</h2>
 
-    <div class="container">
-        <h1>Projekt főoldal</h1>
-        <p>Válassz egy funkciót:</p>
+  <input type="text" id="taskInput" placeholder="Új teendő...">
+  <button id="addBtn">Hozzáadás</button>
 
-        <div class="card">
-            <h2>GitHub felhasználó keresés</h2>
-            <p>Keresés GitHub felhasználók között</p>
-            <a href="user-search.html" class="btn btn-primary">Megnyitás</a>
-        </div>
-    </div>
+  <ul id="taskList"></ul>
 
+  <script src="script.js"></script>
 </body>
 </html>
