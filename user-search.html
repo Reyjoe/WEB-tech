@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Felhasználó keresés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Főoldal</a>
+        <a href="user-search.html">Keresés</a>
+    </nav>
+
+    <div class="container">
+        <h1>GitHub felhasználó keresés</h1>
+
+        <div class="card">
+            <input type="text" id="searchInput" placeholder="Felhasználónév...">
+            <button onclick="searchUser()" class="btn btn-primary">Keresés</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <footer class="footer">
+        <p>GitHub kereső alkalmazás</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
